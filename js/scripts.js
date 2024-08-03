@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('form').addEventListener('submit', function (event) {
+    document.querySelector('#grammarForm').addEventListener('submit', function (event) {
         event.preventDefault();
         checkGrammar();
         alert('Form berhasil dikirim!');
@@ -12,17 +12,17 @@ function checkGrammar() {
 
     // Perbaiki beberapa kesalahan grammar umum (Contoh sederhana)
     var corrections = {
-        " teh ": " the ",
-        " adn ": " and ",
-        " recieve ": " receive ",
-        " occured ": " occurred ",
-        " seperate ": " separate ",
-        " definately ": " definitely ",
-        " goverment ": " government "
+        "teh": "the",
+        "adn": "and",
+        "recieve": "receive",
+        "occured": "occurred",
+        "seperate": "separate",
+        "definately": "definitely",
+        "goverment": "government"
     };
 
     for (var error in corrections) {
-        var regex = new RegExp(error, "gi");
+        var regex = new RegExp("\\b" + error + "\\b", "gi");
         result = result.replace(regex, corrections[error]);
     }
 
