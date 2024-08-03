@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemeriksa Grammar</title>
+    <title>Pemeriksa Spelling</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="bg-primary text-white text-center p-3">
-        <h1>Pemeriksa Grammar</h1>
-        <p>Alat untuk memeriksa dan membetulkan grammar</p>
+        <h1>Pemeriksa Spelling</h1>
+        <p>Alat untuk memeriksa dan membetulkan spelling</p>
     </header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,7 +24,7 @@
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="grammar.html">Grammar</a>
+                    <a class="nav-link" href="grammar.html">Spelling</a>
                 </li>
             </ul>
         </div>
@@ -32,15 +32,15 @@
 
     <main class="container mt-4">
         <section>
-            <h2>Periksa Grammar Anda</h2>
-            <form id="grammarForm">
+            <h2>Periksa Spelling Anda</h2>
+            <form id="spellingForm">
                 <div class="form-group">
                     <label for="textToCheck">Masukkan Teks:</label>
                     <textarea class="form-control" id="textToCheck" rows="5" required></textarea>
                 </div>
-                <button type="button" class="btn btn-primary" onclick="checkGrammar()">Periksa</button>
+                <button type="submit" class="btn btn-primary">Periksa</button>
             </form>
-            <p id="grammarResult"></p>
+            <p id="spellingResult"></p>
         </section>
     </main>
 
